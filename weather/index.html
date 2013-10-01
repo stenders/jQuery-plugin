@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>天气效果Demo</title>
+<link rel="stylesheet" type="text/css" href="css/nio-weather.css" />
+</head>
+<body>
+
+<div class="nio-weather center pr clearfix">
+	<ul class="nio-list pull-left">
+		<script type="text/template" id="nio-list">
+		{{#niolist}}
+			<li class="{{liclass}}">
+				<ul>
+					<li class="nio-color1">
+						<i class="{{img}}"></i>
+						<p class="{{wea}}">天气</p>
+					</li>
+					<li class="{{tem}}">00&deg;</li>
+					<li class="nio-color3">
+						<p>
+							<a href="javascript:;" class="nio-shift pull-right">切换</a>
+							<span class="nio-city">城市</span>
+						</p>
+						<p class="{{day}}">星期</p>
+						<p class="{{date}}">日期</p>
+					</li>
+					<li class="nio-heart">
+						<h4>穿衣小贴士 <a>看看今天该怎么穿搭</a></h4>
+						<p class="{{tip}}">建议穿T恤、衬衫加单裤等夏季服装</p>
+					</li>
+				</ul>
+			</li>
+		{{/niolist}}
+		</script>
+	</ul>
+	<ul class="nio-tabs pull-right">
+		<script type="text/template" id="nio-tabs">
+		{{#niotab}}
+			<li class="{{active}}">
+				<div class="{{tab}}">
+					<i class="{{img}}"></i>
+					<span class="{{day}}">星期</span>
+				</div>
+			</li>
+		{{/niotab}}
+		</script>
+	</ul>
+	<form id="nio-location" class="nio-location pa linkageseclet hide">
+		<span class="caret pa"></span>
+		<a href="javascript:;" class="pull-right">关闭</a>
+		<span>省份</span>
+		<select class="level_1">
+		</select>
+		<span>城市</span>
+		<select class="level_2">
+		</select>
+		<input type="submit" value="切换" />
+	</form>
+</div><!-- nio-weather -->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/mustache.js"></script>
+<script type="text/javascript" src="js/view.js"></script>
+<script type="text/javascript" src="js/citys.js"></script>
+<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+<script type="text/javascript" src="js/nio-weather.js"></script>
+<script type="text/javascript" src="js/LinkageSelect/LinkageSelect.js"></script>
+<script type="text/javascript" src="js/LinkageSelect/location.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
