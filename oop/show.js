@@ -57,14 +57,4 @@ $.fn.showBox = function(options){
 $(document).ready(function(){
 	$('a.show-archor').showBox();
 });
-
-jQuery.easing['jswing'] = jQuery.easing['swing'];
-
-jQuery.extend( jQuery.easing,
-{
-    def: 'swing',
-    easeOutExpo: function (x, t, b, c, d) {
-        return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
-    }
-});
 }(jQuery));
