@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.layer.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<style type="text/css">
+#text{width: 200px;height: 200px;overflow: auto;margin: 30px auto;display: block;}
+</style>
+</head>
+
+<body>
+<a href="#" class="home_config btn_primary">首页设置</a>
+<button id="test2" class="office_config1 btn_primary">课程设置</button>
+<button id="test2" class="office_config2 btn_primary">课程设置</button>
+<button id="test3" class="office_config3 btn_primary">营业所设置</button>
+
+<div id="layer"></div>
+<form action="" method="" class="home_config_pop group abs_center none">
+	<a href="javascript:;" class="close_btn">关闭</a>
+	<p>
+		<label>输入月份</label>
+		<input type="text" class="pop_input" />
+		<span><a href="#">月必上课程公告</a></span>
+	</p>
+	<p class="tc">
+		<input type="submit" value="提 交" class="pop_submit" />
+	</p>
+</form>
+<form action="" method="" class="office_config_pop group abs_center none">
+	<input type="hidden" id="hidden_field" value="" />
+	<a href="javascript:;" class="close_btn">关闭</a>
+	<p>
+		<label>标题</label>
+		<input type="text" class="pop_input" placeholder="输入文本" />
+	</p>
+	<p>
+		<label>说明</label>
+		<textarea class="pop_area" placeholder="不超过80字"></textarea>
+	</p>
+	<div class="clear">
+		<label>附件</label>
+		<div class="fl">
+			<div class="overflow"><input type="file" data-txt="上传缩略图" /></div>
+			<div class="overflow"><input type="file" data-txt="上传课件" /></div>
+			<div class="overflow"><input type="file" data-txt="上传视频" /></div>
+		</div>
+	</div>
+	<p class="tc">
+		<input type="submit" value="提 交" class="pop_submit" />
+	</p>
+</form>
+<textarea id="text"></textarea>
+<script type="text/javascript">
+$(function(){
+	var text = $('#text');
+	var a = Layer({
+		btn : $('.home_config'),
+		fade : true,
+		auto : true,
+		box : $('.home_config_pop'),
+		callback : function(e){
+			callBack.call(null, e);
+		}
+	});
+	var b = Layer({
+		btn : $('.office_config1'),
+		box : $('.office_config_pop'),
+		callback : function(e){
+			callBack.call(null, e);
+		}
+	});
+	var c = Layer({
+		btn : $('.office_config2'),
+		box : $('.office_config_pop'),
+		callback : function(e){
+			callBack.call(null, e);
+		}
+	});
+	var d = Layer({
+		btn : $('.office_config3'),
+		box : $('.office_config_pop'),
+		callback : function(e){
+			callBack.call(null, e);
+		}
+	});
+
+	function callBack(e){
+		if(e) text.val(text.val() + e.target.innerHTML + '\n');
+	}
+});
+</script>
+</body>
+</html>

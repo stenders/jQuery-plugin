@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*密码修改弹窗*/
+body{padding:130px;text-align:center;}
+.btn_primary{background:url(../images/home_btns.jpg) 0 -25px no-repeat;margin:-3px 0 0 10px;display:inline-block;width:91px;height:37px;margin:0;color:#fff;font:14px/34px "Microsoft Yahei";text-align:center;}
+.pop_input,.pop_submit,.pop_area,.pop_btn{background:url(../images/pops.jpg) no-repeat;}
+.abs_center p{margin-bottom:18px;}
+.pop_input,.pop_area{font:13px 'Microsoft Yahei';border:0;outline:0;}
+.abs_center label{float:left;display:inline;font-size:14px;font-weight:700;margin:5px 20px 0 0;color:#414141;text-align:right;}
+.pop_input{background-position:0 -99px;width:171px;height:28px;padding:2px 8px;line-height:24px;}
+.pop_submit{background-position:0 -131px;width:91px;height:37px;border:none;color:#fff;font-size:14px;font-weight:700;}
+
+/*首页设置弹窗*/
+
+.group{padding:45px;font-size:14px;}
+.group a{color:#414141;font-size:12px;}
+.group_cen{padding:15px 0;margin:15px 0;}
+.group_cen .fr{border-left:1px solid #e5e5e5;padding-left:50px;}
+.group_section{color:#5e77b9;font-weight:700;}
+.pop_area{width:177px;height:90px;padding:5px;}
+.pop_btn{background-position:0 -169px;width:73px;height:24px;font-size:12px;color:#fff;text-align:center;margin:6px 0;}
+.group p.tc{margin:20px 0;}
+
+.file_name{font:12px/2 'Microsoft Yahei';margin:0 10px;}
+.overflow{width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/*首页设置弹窗样式*/
+.home_config_pop{width:360px;height:75px;margin:-82px 0 0 -225px;}
+/*今日课程弹窗样式*/
+.office_config_pop{width:270px;height:370px;margin:-230px 0 0 -180px;}

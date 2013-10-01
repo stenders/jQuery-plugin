@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+#layer{background:#000;position:fixed;_position:absolute;width:100%;height:100%;left:0;top:0;opacity:0.5;filter:alpha(opacity=50);cursor:pointer;z-index:99999;display:none;}
+.abs_center{background:#fff;position:fixed;_position:absolute;left:50%;top:50%;z-index:100000;border:1px solid #ccc;
+	box-shadow:10px 10px 10px rgba(0,0,0,0.5);
+	border-radius:5px;
+}
+.close_btn{background:url(../images/pops.jpg) -92px -131px no-repeat;width:28px;height:28px;position:absolute;top:10px;right:10px;text-indent:-999em;}
