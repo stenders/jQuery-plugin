@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="jquery.counter.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#aug_tuan').counter({
+        day : $('#day'),
+        hour : $('#tuan_h'),
+        minute : $('#tuan_m'),
+        second : $('#tuan_s'),
+        from : 9,
+        to : 23,
+        starts : new Date(2012,7,15,0,0),
+        deadline : new Date(2022,7,31,23,0,0)
+    });
+
+    $('#aug_tuan2').counter({
+        day : $('#day2'),
+        hour : $('#tuan_h2'),
+        minute : $('#tuan_m2'),
+        second : $('#tuan_s2'),
+        from : 10,
+        to : 19,
+        starts : new Date(2012,7,15,0,0),
+        deadline : new Date(2022,11,25,23,0,0)
+    });
+
+    $('#aug_tuan3').counter({
+        day : $('#day3'),
+        hour : $('#tuan_h3'),
+        minute : $('#tuan_m3'),
+        second : $('#tuan_s3'),
+        from : 8,
+        to : 12,
+        starts : new Date(2012,0,1,0,0,0),
+        deadline : new Date(2022,11,25,0,0,0)
+    });
+});
+</script>
+</head>
+<body>
+    <h1>从特定日期开始到特定日期结束，每天特定时间段内的倒计时应用</h1>
+    <div id="aug_tuan">
+        <div class="tuan_counter">
+            到今天23点结束时间还有：
+            <span id="tuan_h">00</span>时
+            <span id="tuan_m">00</span>分
+            <span id="tuan_s">00</span>秒
+        </div>
+    </div><!--aug_tuan ends-->
+
+    <div id="aug_tuan2">
+        <div class="tuan_counter">
+            到今天19点下班时间还有：
+            <span id="tuan_h2">00</span>时
+            <span id="tuan_m2">00</span>分
+            <span id="tuan_s2">00</span>秒
+        </div>
+    </div><!--aug_tuan2 ends-->
+
+    <div id="aug_tuan3">
+        <div class="tuan_counter">
+            到今天12点吃饭时间还有：
+            <span id="tuan_h3">00</span>时
+            <span id="tuan_m3">00</span>分
+            <span id="tuan_s3">00</span>秒
+        </div>
+    </div><!--aug_tuan3 ends-->
+</body>
+</html>
