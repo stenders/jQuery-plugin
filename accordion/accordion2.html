@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+<style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  div{
+    width: 640px;
+    margin: 50px auto;
+    position: relative;
+    padding-top: 320px;
+  }
+  label{
+    cursor: pointer;
+    border: 3px solid #ccc;
+    float: left;
+    margin: 18px 0 0 18px;
+  }
+  label img{
+    opacity: 0.6;
+    width: 100px;
+    display: block;
+    -webkit-transition: all 0.5s;
+  }
+  label ~ img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all 0.5s;
+  }
+  input{
+    display: none;
+  }
+  input:checked + label img{
+    opacity: 1;
+  }
+  input:checked + label + img{
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+
+</style>
+</head>
+<body>
+
+
+<div class="slider">
+  <input type="radio" name="slider" id="id1" checked>
+  <label for="id1">
+    <img src="images/1.jpg" alt="">
+  </label>
+  <img src="images/1.jpg" alt="">
+
+  <input type="radio" name="slider" id="id2">
+  <label for="id2">
+    <img src="images/2.jpg" alt="">
+  </label>
+  <img src="images/2.jpg" alt="">
+
+  <input type="radio" name="slider" id="id3">
+  <label for="id3">
+    <img src="images/3.jpg" alt="">
+  </label>
+  <img src="images/3.jpg" alt="">
+
+  <input type="radio" name="slider" id="id4">
+  <label for="id4">
+    <img src="images/4.jpg" alt="">
+  </label>
+  <img src="images/4.jpg" alt="">
+
+  <input type="radio" name="slider" id="id5">
+  <label for="id5">
+    <img src="images/5.jpg" alt="">
+  </label>
+  <img src="images/5.jpg" alt="">
+</div>
+</body>
+</html>
